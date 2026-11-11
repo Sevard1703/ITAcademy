@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITAcademy — IT-образовательный центр</title>
+    <meta name="description" content="ITAcademy — учебный центр, где изучают frontend, backend, UX/UI, data science и cybersecurity. Практика, проекты, преподаватели-практики." />
+    <meta property="og:title" content="ITAcademy — IT-образовательный центр" />
+    <meta property="og:description" content="Практическое обучение IT-профессиям, реальные проекты и поддержка карьерного роста." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230b0b0f'/%3E%3Cpath d='M18 18h28v8H18zm0 20h28v8H18zm0-10h12v8H18zm20 0h10v8H38z' fill='%23B51F32'/%3E%3C/svg%3E" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body data-page="index">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo" aria-label="ITAcademy главная">
+          <span class="site-logo-mark" aria-hidden="true"></span>
+          <span class="site-logo-text">ITAcademy</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="courses.html">Курсы</a>
+          <a href="teachers.html">Преподаватели</a>
+          <a href="about.html">О центре</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="btn btn-primary" href="admission.html">Записаться</a>
+          <button class="mobile-nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Долгий путь к умным профессиям</span>
+            <h1 class="glitch-text">БУДУЩЕЕ НЕ СОЗДАЁТСЯ САМО.<br />ЕГО ПРОГРАММИРУЮТ.</h1>
+            <p class="lead">Освой востребованные IT-профессии, преврати идеи в реальные проекты и построй собственное будущее в мире технологий.</p>
+            <div class="hero-actions">
+              <a href="courses.html" class="btn btn-primary">Посмотреть курсы</a>
+              <a href="admission.html" class="btn btn-secondary">Начать обучение</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-card">
+                <span class="stat-number" data-count="4800" data-suffix="+">0</span>
+                <span class="stat-label">Студентов</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-count="36" data-suffix="">0</span>
+                <span class="stat-label">Программ</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-count="72" data-suffix="">0</span>
+                <span class="stat-label">Преподавателей</span>
+              </div>
+              <div class="stat-card">
+                <span class="stat-number" data-count="2800" data-suffix="+">0</span>
+                <span class="stat-label">Выпускников</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" aria-label="Абстрактная визуализация образовательной платформы">
+            <div class="neon-grid"></div>
+            <div class="orb one"></div>
+            <div class="orb two"></div>
+            <div class="hero-panel pulse-signal">
+              <span class="badge">Indicative build</span>
+              <strong>92%</strong>
+              <span class="muted">успешность карьерного перехода</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Популярные программы</span>
+            <h2>Курсы, которые запускают карьеру</h2>
+          </div>
+
+          <div class="course-grid reveal">
+            <article class="course-card card">
+              <div class="course-image" aria-label="Frontend Development"></div>
+              <div class="course-content">
+                <div class="course-topline">
+                  <span class="badge">Frontend</span>
+                  <span class="muted">3 месяца</span>
+                </div>
+                <h3>Frontend Development</h3>
+                <div class="meta">
+                  <span>Beginner</span>
+                  <span>Online</span>
+                </div>
+                <p>Постройте современный интерфейс, научитесь писать чистый код и создавать цифровые продукты.</p>
+                <div class="price-line">
+                  <span class="price">₽ 49 000</span>
+                  <a href="course-details.html" class="link-arrow">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card card">
+              <div class="course-image" aria-label="Backend Development"></div>
+              <div class="course-content">
+                <div class="course-topline">
+                  <span class="badge">Backend</span>
+                  <span class="muted">4 месяца</span>
+                </div>
+                <h3>Backend Development</h3>
+                <div class="meta">
+                  <span>Intermediate</span>
+                  <span>Hybrid</span>
+                </div>
+                <p>Разработка API, архитектура приложений, базы данных и инфраструктура для масштабируемых сервисов.</p>
+                <div class="price-line">
+                  <span class="price">₽ 58 000</span>
+                  <a href="course-details.html" class="link-arrow">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card card">
+              <div class="course-image" aria-label="Fullstack Development"></div>
+              <div class="course-content">
+                <div class="course-topline">
+                  <span class="badge">Fullstack</span>
+                  <span class="muted">6 месяцев</span>
+                </div>
+                <h3>Fullstack Development</h3>
+                <div class="meta">
+                  <span>Advanced</span>
+                  <span>Offline</span>
+                </div>
+                <p>Комплексный путь от интерфейса до серверной логики, включая реальные командные проекты.</p>
+                <div class="price-line">
+                  <span class="price">₽ 81 000</span>
+                  <a href="course-details.html" class="link-arrow">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card card">
+              <div class="course-image" aria-label="Python Programming"></div>
+              <div class="course-content">
+                <div class="course-topline">
+                  <span class="badge">Python</span>
+                  <span class="muted">2 месяца</span>
+                </div>
+                <h3>Python Programming</h3>
+                <div class="meta">
+                  <span>Beginner</span>
+                  <span>Online</span>
+                </div>
+                <p>Автоматизация, работа с данными, создание REST-сервисов и первые шаги в AI.</p>
+                <div class="price-line">
+                  <span class="price">₽ 38 000</span>
+                  <a href="course-details.html" class="link-arrow">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card card">
+              <div class="course-image" aria-label="UI/UX Design"></div>
+              <div class="course-content">
+                <div class="course-topline">
+                  <span class="badge">Design</span>
+                  <span class="muted">3 месяца</span>
+                </div>
+                <h3>UI/UX Design</h3>
+                <div class="meta">
+                  <span>Beginner</span>
+                  <span>Hybrid</span>
+                </div>
+                <p>Понимание пользовательского поведения, прототипирование, интерфейсная логика и дизайн-системы.</p>
+                <div class="price-line">
+                  <span class="price">₽ 45 000</span>
+                  <a href="course-details.html" class="link-arrow">Подробнее</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="course-card card">
+              <div class="course-image" aria-label="Cybersecurity"></div>
+              <div class="course-content">
+                <div class="course-topline">
+                  <span class="badge">Security</span>
+                  <span class="muted">4 месяца</span>
+                </div>
+                <h3>Cybersecurity</h3>
+                <div class="meta">
+                  <span>Intermediate</span>
+                  <span>Offline</span>
+                </div>
+                <p>Основы кибербезопасности, защита систем, расследование инцидентов и практические лаборатории.</p>
+                <div class="price-line">
+                  <span class="price">₽ 63 000</span>
+                  <a href="course-details.html" class="link-arrow">Подробнее</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Почему мы</span>
+            <h2>Обучение строится на практике и реальных задачах</h2>
+          </div>
+
+          <div class="feature-list reveal">
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-code"></i></div>
+              <h3>Практическое обучение</h3>
+              <p>Каждая тема закрывается мини-проектами, а не сухими лекциями.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+              <h3>Опытные преподаватели</h3>
+              <p>Специалисты с реальным продуктовым опытом и кейсами из индустрии.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-diagram-project"></i></div>
+              <h3>Реальные проекты</h3>
+              <p>Что даёт понимание, как строить продукты под требования бизнеса.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-user-group"></i></div>
+              <h3>Поддержка студентов</h3>
+              <p>Групповые созвоны, менторство, обратная связь по заданиям и портфолио.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h3>Помощь с портфолио</h3>
+              <p>Разбираем сильные стороны, упаковываем проекты и готовим к собеседованию.</p>
+            </article>
+            <article class="feature-card">
+              <div class="feature-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+              <h3>Карьерные консультации</h3>
+              <p>Помогаем выбрать стратегию роста, если вы уже работаете и хотите сменить сферу.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Команда</span>
+            <h2>Преподаватели, которые ведут в индустрию</h2>
+          </div>
+
+          <div class="teachers-grid reveal">
+            <article class="teacher-card card">
+              <div class="teacher-image">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Алина Петрова" loading="lazy" />
+              </div>
+              <div class="teacher-meta">Frontend / UI</div>
+              <h3>Алина Петрова</h3>
+              <p class="bio">Архитектор интерфейсов и преподаватель, помогла 400+ студентам выйти в продуктовый дизайн.</p>
+              <div class="teacher-links">
+                <span class="muted">8 лет опыта</span>
+                <a href="teacher-details.html" class="link-arrow">Профиль</a>
+              </div>
+            </article>
+
+            <article class="teacher-card card">
+              <div class="teacher-image">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Иван Соколов" loading="lazy" />
+              </div>
+              <div class="teacher-meta">Backend / Architecture</div>
+              <h3>Иван Соколов</h3>
+              <p class="bio">Backend-разработчик с опытом построения сервисов в fintech и SaaS-секторах.</p>
+              <div class="teacher-links">
+                <span class="muted">10 лет опыта</span>
+                <a href="teacher-details.html" class="link-arrow">Профиль</a>
+              </div>
+            </article>
+
+            <article class="teacher-card card">
+              <div class="teacher-image">
+                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=900&q=80" alt="Мария Орлова" loading="lazy" />
+              </div>
+              <div class="teacher-meta">Data Science</div>
+              <h3>Мария Орлова</h3>
+              <p class="bio">Математик и ML-специалист, развивает программы по анализу данных и AI.</p>
+              <div class="teacher-links">
+                <span class="muted">9 лет опыта</span>
+                <a href="teacher-details.html" class="link-arrow">Профиль</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Как проходит обучение</span>
+            <h2>Путь от первого шага до проекта</h2>
+          </div>
+
+          <div class="timeline reveal">
+            <article class="timeline-step">
+              <div class="step-number">01</div>
+              <h3>Выбор направления</h3>
+              <p>Определяем цели, уровень подготовки и карьерный вектор.</p>
+            </article>
+            <article class="timeline-step">
+              <div class="step-number">02</div>
+              <h3>Запись на обучение</h3>
+              <p>Подписываем договор и назначаем стартовую программу.</p>
+            </article>
+            <article class="timeline-step">
+              <div class="step-number">03</div>
+              <h3>Изучение теории</h3>
+              <p>Осваиваем архитектуру решений и базовые инструменты.</p>
+            </article>
+            <article class="timeline-step">
+              <div class="step-number">04</div>
+              <h3>Практические занятия</h3>
+              <p>Работаем над задачами и реальными кейсами в мини-группах.</p>
+            </article>
+            <article class="timeline-step">
+              <div class="step-number">05</div>
+              <h3>Создание проектов</h3>
+              <p>Поэтапно формируем портфолио из нескольких рабочих продуктов.</p>
+            </article>
+            <article class="timeline-step">
+              <div class="step-number">06</div>
+              <h3>Завершение курса</h3>
+              <p>Получаете документы, рекомендации и поддержку в старте.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Проекты</span>
+            <h2>Результаты студентов и выпускников</h2>
+          </div>
+
+          <div class="projects-grid reveal">
+            <article class="project-card">
+              <div class="project-media">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Портал для обучения" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="badge">Product design</span>
+                <h3>Learning Portal</h3>
+                <p>Платформа для обучения и аналитики прогресса студентов.</p>
+                <a href="student-projects.html" class="link-arrow">Смотреть проект</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-media">
+                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="CRM для бизнеса" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="badge">Backend</span>
+                <h3>CRM Analytics</h3>
+                <p>Управляющая система с аналитикой воронки продаж и задачами.</p>
+                <a href="student-projects.html" class="link-arrow">Смотреть проект</a>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-media">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="AI dashboard" loading="lazy" />
+              </div>
+              <div class="project-body">
+                <span class="badge">AI</span>
+                <h3>Predictive Dashboard</h3>
+                <p>Инструмент для прогнозирования метрик и отображения моделей.</p>
+                <a href="student-projects.html" class="link-arrow">Смотреть проект</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Отзывы</span>
+            <h2>Что говорят наши выпускники</h2>
+          </div>
+
+          <div class="reviews-grid reveal">
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>«Пошёл с нуля и через 5 месяцев уже работал по фрилансу и получил оффер в продуктовую компанию. Поддержка была очень сильной и структурной.»</p>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong>Егор К.</strong><br />
+                  <span class="muted">Frontend Developer</span>
+                </div>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>«Очень крутой баланс теории и практики. Не просто дали задачи, а помогли видеть архитектуру продукта и понять, как строить рабочие решения.»</p>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong>Анна П.</strong><br />
+                  <span class="muted">Product Analyst</span>
+                </div>
+              </div>
+            </article>
+            <article class="review-card">
+              <div class="stars">★★★★★</div>
+              <p>«Формат обучения домашний, но на уровне продукта. Все проекты были не абстрактные, а похожи на реальные рабочие задачи. Это сильно помогло в собеседованиях.»</p>
+              <div class="reviewer">
+                <div class="avatar" aria-hidden="true"></div>
+                <div>
+                  <strong>Михаил В.</strong><br />
+                  <span class="muted">Backend Engineer</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="cta-box">
+            <div>
+              <span class="eyebrow">Стартуем сейчас</span>
+              <h2>ТВОЙ СЛЕДУЮЩИЙ УРОВЕНЬ НАЧИНАЕТСЯ ЗДЕСЬ.</h2>
+            </div>
+            <a href="courses.html" class="btn btn-primary">Выбрать курс</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <a href="index.html" class="site-logo" aria-label="ITAcademy">
+              <span class="site-logo-mark" aria-hidden="true"></span>
+              <span class="site-logo-text">ITAcademy</span>
+            </a>
+            <p>Учебный центр для тех, кто хочет не просто изучать технологии, а строить карьеру, создавать продукты и менять отрасли.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Навигация</h3>
+            <div class="footer-links">
+              <a href="about.html">О центре</a>
+              <a href="courses.html">Курсы</a>
+              <a href="teachers.html">Преподаватели</a>
+              <a href="reviews.html">Отзывы</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Контакты</h3>
+            <div class="footer-links">
+              <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+              <a href="mailto:hello@itacademy.ru">hello@itacademy.ru</a>
+              <span>Москва, ул. Технополис, 12</span>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Соцсети</h3>
+            <div class="social-links">
+              <a href="#">Telegram</a>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© 2026 ITAcademy. Все права защищены.</span>
+          <div class="footer-links" style="flex-direction: row; gap: 18px;">
+            <a href="faq.html">FAQ</a>
+            <a href="contacts.html">Политика конфиденциальности</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary hidden" data-back-to-top aria-label="Наверх">Наверх</button>
+  </body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Курсы | ITAcademy</title>
+    <meta name="description" content="Каталог курсов ITAcademy: frontend, backend, cybersecurity, data science, design и другие направления." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230b0b0f'/%3E%3Cpath d='M18 18h28v8H18zm0 20h28v8H18zm0-10h12v8H18zm20 0h10v8H38z' fill='%23B51F32'/%3E%3C/svg%3E" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body data-page="courses">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo"><span class="site-logo-mark"></span><span class="site-logo-text">ITAcademy</span></a>
+        <nav class="site-nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="courses.html">Курсы</a>
+          <a href="teachers.html">Преподаватели</a>
+          <a href="about.html">О центре</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-primary" href="admission.html">Записаться</a>
+          <button class="mobile-nav-toggle" aria-label="Открыть меню" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container hero-inner">
+          <div class="reveal">
+            <span class="eyebrow">Каталог программ</span>
+            <h1>Выбери курс, который ведёт к следующему шагу.</h1>
+            <p>Профессии будущего требуют знания не только инструментов, но и мышления, архитектуры и командной работы.</p>
+          </div>
+          <div class="hero-visual reveal" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container" data-course-filter>
+          <div class="filter-bar reveal">
+            <div class="filter-tools">
+              <input class="filter-input" type="search" data-search placeholder="Поиск курса" aria-label="Поиск курса" />
+              <select class="filter-select" data-level aria-label="Фильтр по уровню">
+                <option value="all">Все уровни</option>
+                <option value="Beginner">Начальный</option>
+                <option value="Intermediate">Средний</option>
+                <option value="Advanced">Продвинутый</option>
+              </select>
+              <select class="filter-select" data-duration aria-label="Фильтр по длительности">
+                <option value="all">Любая длительность</option>
+                <option value="short">До 3 месяцев</option>
+                <option value="medium">3–6 месяцев</option>
+                <option value="long">Больше 6 месяцев</option>
+              </select>
+            </div>
+            <div class="filter-tools">
+              <select class="filter-select" data-sort aria-label="Сортировка">
+                <option value="default">Сортировка</option>
+                <option value="price-asc">Сначала дешёвые</option>
+                <option value="price-desc">Сначала дорогие</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="course-grid reveal">
+            <article class="course-card card" data-title="Frontend Development" data-level="Beginner" data-duration="3" data-price="49000" data-category="Frontend">
+              <div class="course-image" aria-label="Frontend Development"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">Frontend</span><span class="muted">3 месяца</span></div>
+                <h3>Frontend Development</h3>
+                <div class="meta"><span>Beginner</span><span>Online</span></div>
+                <p>Разработка интерфейсов, организация UI-логики и работа с современными инструментами.</p>
+                <div class="price-line"><span class="price">₽ 49 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+
+            <article class="course-card card" data-title="Backend Development" data-level="Intermediate" data-duration="4" data-price="58000" data-category="Backend">
+              <div class="course-image" aria-label="Backend Development"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">Backend</span><span class="muted">4 месяца</span></div>
+                <h3>Backend Development</h3>
+                <div class="meta"><span>Intermediate</span><span>Hybrid</span></div>
+                <p>API, серверные архитектуры, базы данных, безопасность и масштабируемость.</p>
+                <div class="price-line"><span class="price">₽ 58 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+
+            <article class="course-card card" data-title="Fullstack Development" data-level="Advanced" data-duration="6" data-price="81000" data-category="Fullstack">
+              <div class="course-image" aria-label="Fullstack Development"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">Fullstack</span><span class="muted">6 месяцев</span></div>
+                <h3>Fullstack Development</h3>
+                <div class="meta"><span>Advanced</span><span>Offline</span></div>
+                <p>Сборка полноценного продукта: frontend, backend, data flow и архитектура проекта.</p>
+                <div class="price-line"><span class="price">₽ 81 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+
+            <article class="course-card card" data-title="Python Programming" data-level="Beginner" data-duration="2" data-price="38000" data-category="Python">
+              <div class="course-image" aria-label="Python Programming"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">Python</span><span class="muted">2 месяца</span></div>
+                <h3>Python Programming</h3>
+                <div class="meta"><span>Beginner</span><span>Online</span></div>
+                <p>Автоматизация, базовые структуры данных, работа с API и первые проекты.</p>
+                <div class="price-line"><span class="price">₽ 38 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+
+            <article class="course-card card" data-title="JavaScript Development" data-level="Intermediate" data-duration="4" data-price="54000" data-category="JavaScript">
+              <div class="course-image" aria-label="JavaScript Development"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">JS</span><span class="muted">4 месяца</span></div>
+                <h3>JavaScript Development</h3>
+                <div class="meta"><span>Intermediate</span><span>Hybrid</span></div>
+                <p>Глубокое понимание языка, событий, DOM, асинхронности, модульности и библиотек.</p>
+                <div class="price-line"><span class="price">₽ 54 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+
+            <article class="course-card card" data-title="UI/UX Design" data-level="Beginner" data-duration="3" data-price="45000" data-category="Design">
+              <div class="course-image" aria-label="UI/UX Design"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">Design</span><span class="muted">3 месяца</span></div>
+                <h3>UI/UX Design</h3>
+                <div class="meta"><span>Beginner</span><span>Hybrid</span></div>
+                <p>Сайты, интерфейсы, UX-исследования, прототипы и дизайн-системы.</p>
+                <div class="price-line"><span class="price">₽ 45 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+
+            <article class="course-card card" data-title="Cybersecurity" data-level="Advanced" data-duration="5" data-price="63000" data-category="Security">
+              <div class="course-image" aria-label="Cybersecurity"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">Security</span><span class="muted">5 месяцев</span></div>
+                <h3>Cybersecurity</h3>
+                <div class="meta"><span>Advanced</span><span>Offline</span></div>
+                <p>Защита сетевых решений, базовые методы pentest и реагирование на инциденты.</p>
+                <div class="price-line"><span class="price">₽ 63 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+
+            <article class="course-card card" data-title="Data Science" data-level="Intermediate" data-duration="6" data-price="72000" data-category="Data">
+              <div class="course-image" aria-label="Data Science"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">Data</span><span class="muted">6 месяцев</span></div>
+                <h3>Data Science</h3>
+                <div class="meta"><span>Intermediate</span><span>Hybrid</span></div>
+                <p>Анализ данных, статистика, машинное обучение и визуализация результатов.</p>
+                <div class="price-line"><span class="price">₽ 72 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+
+            <article class="course-card card" data-title="Artificial Intelligence" data-level="Advanced" data-duration="7" data-price="99000" data-category="AI">
+              <div class="course-image" aria-label="Artificial Intelligence"></div>
+              <div class="course-content">
+                <div class="course-topline"><span class="badge">AI</span><span class="muted">7 месяцев</span></div>
+                <h3>Artificial Intelligence</h3>
+                <div class="meta"><span>Advanced</span><span>Offline</span></div>
+                <p>Нейросети, работа с данными, ML-модели и разработка решений для бизнеса.</p>
+                <div class="price-line"><span class="price">₽ 99 000</span><a href="course-details.html" class="link-arrow">Подробнее</a></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="hidden" data-empty-state>
+            <p>По вашему запросу ничего не найдено. Попробуйте изменить фильтры.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <a href="index.html" class="site-logo"><span class="site-logo-mark"></span><span class="site-logo-text">ITAcademy</span></a>
+            <p>IT-образование, где теория встречается с задачами из реального мира.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Навигация</h3>
+            <div class="footer-links">
+              <a href="about.html">О центре</a>
+              <a href="courses.html">Курсы</a>
+              <a href="teachers.html">Преподаватели</a>
+              <a href="admission.html">Поступление</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Контакты</h3>
+            <div class="footer-links">
+              <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+              <a href="mailto:hello@itacademy.ru">hello@itacademy.ru</a>
+              <span>Москва, ул. Технополис, 12</span>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Соцсети</h3>
+            <div class="social-links">
+              <a href="#">Telegram</a>
+              <a href="#">Instagram</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 ITAcademy</span>
+          <span>Политика конфиденциальности</span>
+        </div>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary hidden" data-back-to-top aria-label="Наверх">Наверх</button>
+  </body>
+</html>

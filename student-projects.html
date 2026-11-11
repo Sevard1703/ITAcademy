@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Проекты студентов | ITAcademy</title>
+    <meta name="description" content="Проекты студентов ITAcademy — реальные кейсы, аналитика, интерфейсы, AI-проекты и решения для бизнеса." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230b0b0f'/%3E%3Cpath d='M18 18h28v8H18zm0 20h28v8H18zm0-10h12v8H18zm20 0h10v8H38z' fill='%23B51F32'/%3E%3C/svg%3E" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body data-page="projects">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo"><span class="site-logo-mark"></span><span class="site-logo-text">ITAcademy</span></a>
+        <nav class="site-nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="courses.html">Курсы</a>
+          <a href="teachers.html">Преподаватели</a>
+          <a href="about.html">О центре</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-primary" href="admission.html">Записаться</a>
+          <button class="mobile-nav-toggle" aria-label="Открыть меню" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container hero-inner">
+          <div class="reveal">
+            <span class="eyebrow">Проекты студентов</span>
+            <h1>Готовые решения, которые запускают карьеру.</h1>
+            <p>Собираем лучшие работы студентов: от цифровых сервисов до аналитических систем и интерфейсов.</p>
+          </div>
+          <div class="hero-visual reveal" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-media"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Learning Portal" loading="lazy" /></div>
+              <div class="project-body"><span class="badge">Product</span><h3>Learning Portal</h3><p>Платформа для отслеживания прогресса и изучения дисциплин.</p></div>
+            </article>
+            <article class="project-card">
+              <div class="project-media"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="CRM Analytics" loading="lazy" /></div>
+              <div class="project-body"><span class="badge">Backend</span><h3>CRM Analytics</h3><p>Сервис для отслеживания продаж, лидов и метрик воронки.</p></div>
+            </article>
+            <article class="project-card">
+              <div class="project-media"><img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Predictive Dashboard" loading="lazy" /></div>
+              <div class="project-body"><span class="badge">AI</span><h3>Predictive Dashboard</h3><p>Инструмент визуализации данных и предиктивной аналитики.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column"><a href="index.html" class="site-logo"><span class="site-logo-mark"></span><span class="site-logo-text">ITAcademy</span></a><p>Проекты студентов — отражение реального роста.</p></div>
+          <div class="footer-column"><h3>Навигация</h3><div class="footer-links"><a href="courses.html">Курсы</a><a href="teachers.html">Преподаватели</a><a href="reviews.html">Отзывы</a><a href="contacts.html">Контакты</a></div></div>
+          <div class="footer-column"><h3>Контакты</h3><div class="footer-links"><a href="tel:+74951234567">+7 (495) 123-45-67</a><a href="mailto:hello@itacademy.ru">hello@itacademy.ru</a><span>Москва, ул. Технополис, 12</span></div></div>
+          <div class="footer-column"><h3>Соцсети</h3><div class="social-links"><a href="#">Telegram</a><a href="#">Instagram</a><a href="#">LinkedIn</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 ITAcademy</span><span>Политика конфиденциальности</span></div>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary hidden" data-back-to-top aria-label="Наверх">Наверх</button>
+  </body>
+</html>

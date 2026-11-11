@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Development | ITAcademy</title>
+    <meta name="description" content="Подробная программа курса Frontend Development. Обучение HTML, CSS, JavaScript, архитектуре интерфейсов и разработке реальных проектов." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230b0b0f'/%3E%3Cpath d='M18 18h28v8H18zm0 20h28v8H18zm0-10h12v8H18zm20 0h10v8H38z' fill='%23B51F32'/%3E%3C/svg%3E" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body data-page="courses">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo"><span class="site-logo-mark"></span><span class="site-logo-text">ITAcademy</span></a>
+        <nav class="site-nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="courses.html">Курсы</a>
+          <a href="teachers.html">Преподаватели</a>
+          <a href="about.html">О центре</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-primary" href="admission.html">Записаться</a>
+          <button class="mobile-nav-toggle" aria-label="Открыть меню" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container hero-inner">
+          <div class="reveal">
+            <span class="eyebrow">Frontend Development</span>
+            <h1>Создавайте интерфейсы, которые хочется использовать.</h1>
+            <p>Профессиональный курс для тех, кто хочет научиться создавать интерфейсы, выделяться среди разработчиков и быстро переходить в продуктовую работу.</p>
+            <div class="meta-row">
+              <span>3 месяца</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span>Онлайн / офлайн</span>
+              <span class="dot" aria-hidden="true"></span>
+              <span>От 18 лет</span>
+            </div>
+          </div>
+          <div class="hero-visual reveal" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="admission-layout">
+            <div class="location-card">
+              <h3>О курсе</h3>
+              <p>Курс рассчитан на тех, кто хочет освоить веб-разработку с нуля или улучшить навыки. Он охватывает верстку, JavaScript, работу с UX, анимации и проектную деятельность.</p>
+              <div class="meta-row" style="margin-top: 20px;">
+                <span><strong>Преподаватель:</strong> Алина Петрова</span>
+              </div>
+              <div class="meta-row" style="margin-top: 12px;">
+                <span><strong>Стоимость:</strong> ₽ 49 000</span>
+              </div>
+            </div>
+            <div class="admission-card">
+              <h3>Форма записи</h3>
+              <form data-demo-form>
+                <div class="form-row">
+                  <div class="form-group">
+                    <input class="form-field" type="text" data-validate="required" placeholder="Ваше имя" />
+                    <span class="error-text">Введите имя</span>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-field" type="email" data-validate="email" placeholder="E-mail" />
+                    <span class="error-text">Введите корректный email</span>
+                  </div>
+                </div>
+                <div class="form-row" style="margin-top: 18px;">
+                  <div class="form-group">
+                    <input class="form-field" type="tel" data-validate="phone" placeholder="Телефон" />
+                    <span class="error-text">Введите корректный номер</span>
+                  </div>
+                  <div class="form-group">
+                    <select class="form-field" data-validate="required">
+                      <option value="">Формат обучения</option>
+                      <option>Онлайн</option>
+                      <option>Офлайн</option>
+                      <option>Гибрид</option>
+                    </select>
+                    <span class="error-text">Выберите формат</span>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit" style="margin-top: 20px;">Записаться на курс</button>
+                <div class="success-message">Ваша заявка успешно отправлена. Менеджер свяжется с вами.</div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="section-header">
+            <span class="eyebrow">Что вы получите</span>
+            <h2>Цели обучения</h2>
+          </div>
+          <div class="feature-list">
+            <article class="feature-card"><div class="feature-icon"><i class="fa-solid fa-html5"></i></div><h3>HTML & CSS</h3><p>Понимание семантики, адаптивной вёрстки и доступных интерфейсов.</p></article>
+            <article class="feature-card"><div class="feature-icon"><i class="fa-solid fa-js"></i></div><h3>JavaScript</h3><p>Построение логики, работа с DOM, запросы и основы архитектуры кода.</p></article>
+            <article class="feature-card"><div class="feature-icon"><i class="fa-solid fa-palette"></i></div><h3>UX/UI</h3><p>Освоение визуального языка продукта, типографики и пользовательского сценария.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="section-header">
+            <span class="eyebrow">Программа</span>
+            <h2>Модули курса</h2>
+          </div>
+          <div class="faq-grid">
+            <div class="accordion-item open">
+              <button class="accordion-trigger" aria-expanded="true"><span>Модуль 1. Основы веб-разработки</span><span>+</span></button>
+              <div class="accordion-content" style="max-height: 220px;">
+                <div class="accordion-body">
+                  Введение в frontend, устройство web, HTML, семантическая вёрстка, CSS-системы, типографика и адаптивность.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false"><span>Модуль 2. JavaScript для интерфейсов</span><span>+</span></button>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  Переменные, функции, массивы, события, DOM, асинхронность, запросы к API и базовая организация логики интерфейса.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false"><span>Модуль 3. UX/UI и дизайн-системы</span><span>+</span></button>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  Работа с визуальной иерархией, сеткой, цветами, компонентами, макетами и подготовкой дизайна к разработке.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false"><span>Модуль 4. Проект и портфолио</span><span>+</span></button>
+              <div class="accordion-content">
+                <div class="accordion-body">
+                  Создание итогового проекта, подготовка слайд-дека, оформление портфолио и подготовка к собеседованию.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="section-header">
+            <span class="eyebrow">FAQ</span>
+            <h2>Часто задаваемые вопросы</h2>
+          </div>
+          <div class="faq-grid">
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false"><span>Нужны ли знания программирования до начала?</span><span>+</span></button>
+              <div class="accordion-content"><div class="accordion-body">Нет, курс построен так, чтобы начать с нуля и довести навыки до уровня, достаточного для реализации проектов.</div></div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-trigger" aria-expanded="false"><span>Можно ли учиться онлайн?</span><span>+</span></button>
+              <div class="accordion-content"><div class="accordion-body">Да, курс доступен в онлайн-формате с поддержкой преподавателя и проверкой заданий.</div></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <a href="index.html" class="site-logo"><span class="site-logo-mark"></span><span class="site-logo-text">ITAcademy</span></a>
+            <p>Обучение для тех, кто хочет не просто изучать технологии, а строить карьеру в IT.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Навигация</h3>
+            <div class="footer-links">
+              <a href="courses.html">Курсы</a>
+              <a href="teachers.html">Преподаватели</a>
+              <a href="admission.html">Запись</a>
+              <a href="faq.html">FAQ</a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Контакты</h3>
+            <div class="footer-links">
+              <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+              <a href="mailto:hello@itacademy.ru">hello@itacademy.ru</a>
+              <span>Москва, ул. Технополис, 12</span>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Соцсети</h3>
+            <div class="social-links">
+              <a href="#">Telegram</a>
+              <a href="#">Instagram</a>
+              <a href="#">YouTube</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 ITAcademy</span><span>Политика конфиденциальности</span></div>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary hidden" data-back-to-top aria-label="Наверх">Наверх</button>
+  </body>
+</html>

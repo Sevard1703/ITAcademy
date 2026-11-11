@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Преподаватели | ITAcademy</title>
+    <meta name="description" content="Преподаватели ITAcademy — практики, менторы и эксперты в веб-разработке, дизайне, data science и cybersecurity." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230b0b0f'/%3E%3Cpath d='M18 18h28v8H18zm0 20h28v8H18zm0-10h12v8H18zm20 0h10v8H38z' fill='%23B51F32'/%3E%3C/svg%3E" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body data-page="teachers">
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="index.html" class="site-logo"><span class="site-logo-mark"></span><span class="site-logo-text">ITAcademy</span></a>
+        <nav class="site-nav" aria-label="Главная навигация">
+          <a href="index.html">Главная</a>
+          <a href="courses.html">Курсы</a>
+          <a href="teachers.html">Преподаватели</a>
+          <a href="about.html">О центре</a>
+          <a href="contacts.html">Контакты</a>
+        </nav>
+        <div class="header-actions">
+          <a class="btn btn-primary" href="admission.html">Записаться</a>
+          <button class="mobile-nav-toggle" aria-label="Открыть меню" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container hero-inner">
+          <div class="reveal">
+            <span class="eyebrow">Команда центра</span>
+            <h1>Преподаватели, которые ведут на рынок.</h1>
+            <p>Мы собрали специалистов с практическим опытом, которые умеют объяснять сложно и давать полезные задания на реальных кейсах.</p>
+          </div>
+          <div class="hero-visual reveal" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container reveal">
+          <div class="filter-bar">
+            <div class="filter-tools">
+              <button class="filter-chip active" type="button">Все</button>
+              <button class="filter-chip" type="button">Frontend</button>
+              <button class="filter-chip" type="button">Backend</button>
+              <button class="filter-chip" type="button">Design</button>
+              <button class="filter-chip" type="button">Data</button>
+            </div>
+          </div>
+          <div class="teachers-grid">
+            <article class="teacher-card card">
+              <div class="teacher-image"><img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Алина Петрова" loading="lazy" /></div>
+              <div class="teacher-meta">Frontend / UX</div>
+              <h3>Алина Петрова</h3>
+              <p class="bio">Преподает интерфейсную разработку, UX и работу с дизайн-системами. Руководит командой из 6 product-дизайнеров.</p>
+              <div class="teacher-links"><span class="muted">8 лет опыта</span><a class="link-arrow" href="teacher-details.html">Профиль</a></div>
+            </article>
+            <article class="teacher-card card">
+              <div class="teacher-image"><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80" alt="Иван Соколов" loading="lazy" /></div>
+              <div class="teacher-meta">Backend / Architecture</div>
+              <h3>Иван Соколов</h3>
+              <p class="bio">Специализируется на архитектуре серверных систем, API и масштабируемых решения для B2B-проектов.</p>
+              <div class="teacher-links"><span class="muted">10 лет опыта</span><a class="link-arrow" href="teacher-details.html">Профиль</a></div>
+            </article>
+            <article class="teacher-card card">
+              <div class="teacher-image"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=900&q=80" alt="Мария Орлова" loading="lazy" /></div>
+              <div class="teacher-meta">Data Science</div>
+              <h3>Мария Орлова</h3>
+              <p class="bio">Главный преподаватель по анализу данных и ML. Помогает студентам строить реальный аналитический стек.</p>
+              <div class="teacher-links"><span class="muted">9 лет опыта</span><a class="link-arrow" href="teacher-details.html">Профиль</a></div>
+            </article>
+            <article class="teacher-card card">
+              <div class="teacher-image"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80" alt="Екатерина Лапина" loading="lazy" /></div>
+              <div class="teacher-meta">Cybersecurity</div>
+              <h3>Екатерина Лапина</h3>
+              <p class="bio">Эксперт по кибербезопасности и защите систем. Проводит практикумы по безопасности приложений.</p>
+              <div class="teacher-links"><span class="muted">7 лет опыта</span><a class="link-arrow" href="teacher-details.html">Профиль</a></div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column"><a href="index.html" class="site-logo"><span class="site-logo-mark"></span><span class="site-logo-text">ITAcademy</span></a><p>Научиться строить продукты и зарабатывать на технологии.</p></div>
+          <div class="footer-column"><h3>Навигация</h3><div class="footer-links"><a href="courses.html">Курсы</a><a href="teachers.html">Преподаватели</a><a href="admission.html">Поступление</a><a href="contacts.html">Контакты</a></div></div>
+          <div class="footer-column"><h3>Контакты</h3><div class="footer-links"><a href="tel:+74951234567">+7 (495) 123-45-67</a><a href="mailto:hello@itacademy.ru">hello@itacademy.ru</a><span>Москва, ул. Технополис, 12</span></div></div>
+          <div class="footer-column"><h3>Соцсети</h3><div class="social-links"><a href="#">Telegram</a><a href="#">Instagram</a><a href="#">LinkedIn</a></div></div>
+        </div>
+        <div class="footer-bottom"><span>© 2026 ITAcademy</span><span>Политика конфиденциальности</span></div>
+      </div>
+    </footer>
+
+    <button class="btn btn-primary hidden" data-back-to-top aria-label="Наверх">Наверх</button>
+  </body>
+</html>
